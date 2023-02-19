@@ -1,0 +1,17 @@
+export const FETCH_DATA_REQ = "FETCH_DATA_REQ";
+export const FETCH_DATA_SUCC = "FETCH_DATA_SUCC";
+export const FETCH_DATA_FAIL = "FETCH_DATA_FAIL";
+
+
+export const ADD_TO_CART_REQ = "ADD_TO_CART_REQ";
+export const ADD_TO_CART_SUCC = "ADD_TO_CART_SUCC";
+export const ADD_TO_CART_FAIL = "ADD_TO_CART_FAIL";
+
+
+export const FETCH_CART_REQ = "FETCH_CART_REQ";
+export const FETCH_CART_SUCC = "FETCH_CART_SUCC";
+export const FETCH_CART_FAIL = "FETCH_CART_FAIL";
+
+export const DELET_CART_REQ = "DELET_CART_REQ";
+export const DELET_CART_SUCC = "DELET_CART_SUCC";
+export const DELET_CART_FAIL = "DELET_CART_FAIL";
