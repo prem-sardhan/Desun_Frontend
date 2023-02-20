@@ -40,7 +40,7 @@ export const CheckoutCard = ({ title, image }) => {
       <h1>{title}</h1>
       <h2>
         {startvalue !== new Date() && endvalue !== new Date()
-          ? left(endvalue, startvalue) + "Days remaining"
+          ? left(endvalue, startvalue) + "Days to go"
           : null}
       </h2>
       <div className="optionsDiv">
