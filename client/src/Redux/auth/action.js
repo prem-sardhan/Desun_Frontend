@@ -24,7 +24,7 @@ const logInFail = (payload) => {
 
 const logIn = (payload) => (dispatch) => {
   dispatch(logInReq());
-    Axios.post("https://desun-backend.onrender.com/login", payload)
+    Axios.post("https://gold-worried-cockroach.cyclic.app/login", payload)
     //   .then((res)=> console.log(res))
     .then((r) => dispatch(logInSucc(r.data)))
     .catch((e) => dispatch(logInFail(e.data)));

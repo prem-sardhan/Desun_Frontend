@@ -48,7 +48,7 @@ export const Signup = () => {
       console.log(formData)
       setLoading(true)
         try {
-      let res = await fetch("https://desun-backend.onrender.com/register", {
+      let res = await fetch("https://gold-worried-cockroach.cyclic.app/register", {
         method: "POST",
 
         headers: {
@@ -122,20 +122,14 @@ export const Signup = () => {
                   onChange={handleChange}
                 />
               </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
-                  }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid>
+             
             </Grid>
             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              style={{border: "2px dotted black", backgroundColor:"orangered"}}
             >
               Sign Up
             </Button>

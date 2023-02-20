@@ -38,7 +38,7 @@ export const Game = () => {
     const getSinglegame = async (id) => {
         try {
             const response = await fetch(
-              `https://desun-backend.onrender.com/game/${id}`
+              `https://gold-worried-cockroach.cyclic.app/game/${id}`
             );
 
             const res = await response.json()

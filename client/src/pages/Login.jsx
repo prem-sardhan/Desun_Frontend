@@ -118,8 +118,9 @@ export const Login = () => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              style={{border: "2px dotted black", backgroundColor:"orangered"}}
             >
-              Sign Up
+              Login
             </Button>
           </Box>
         </Box>

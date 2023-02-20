@@ -26,7 +26,7 @@ export const FetchData = (payload) => {
   return (dispatch, token) => {
     dispatch(FetchDataReq);
 
-    Axios.get("https://desun-backend.onrender.com/game", {
+    Axios.get("https://gold-worried-cockroach.cyclic.app/game", {
       params: {
         ...payload,
         token,
@@ -62,7 +62,7 @@ const Add_Game_Fail = (payload) => {
 
 export const AddToCart = (game) => (dispatch) => {
   dispatch(Add_Game_Req());
-    Axios.post(`https://desun-backend.onrender.com/cart`, game)
+    Axios.post(`https://gold-worried-cockroach.cyclic.app/cart`, game)
      
     .then((r) => dispatch(Add_Game_Succ(r.data)))
     .then(() => alert("Added"))
@@ -93,7 +93,7 @@ const Fetch_Cart_Fail = (payload) => {
 
 export const fetchCart = (payload) => (dispatch) => {
   dispatch(Fetch_Cart_Req);
-  Axios.get("https://desun-backend.onrender.com/cart", {
+  Axios.get("https://gold-worried-cockroach.cyclic.app/cart", {
     params: {
       ...payload,
     },
@@ -125,7 +125,7 @@ const delet_Cart_Fail = (payload) => {
 
 export const deletCartItmes = (id) => (dispatch) => {
   dispatch(delet_Cart_Req());
-  Axios.delete(`https://desun-backend.onrender.com/cart/${id}`)
+  Axios.delete(`https://gold-worried-cockroach.cyclic.app/cart/${id}`)
     .then((r) => {
       dispatch(delet_Cart_Succ(r.data));
     })
